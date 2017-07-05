@@ -26,6 +26,7 @@ namespace _10.PopulationCounter
             foreach (var kvp in dictionary.OrderByDescending(x=>x.Value.Values.Sum()))
             {
                 Console.WriteLine($"{kvp.Key} (total population: {kvp.Value.Values.Sum()})");
+
                 foreach (var cityAndPopulation in kvp.Value.OrderByDescending(x=>x.Value))
                 {
                     Console.WriteLine($"=>{cityAndPopulation.Key}: {cityAndPopulation.Value}");
@@ -41,7 +42,12 @@ namespace _10.PopulationCounter
                 dictionary[country]=new Dictionary<string, int>();
             }
 
-            dictionary[country][city] = population;
+            if (!dictionary[country].ContainsKey(city))
+            {
+                dictionary[country][city] = 0;
+            }
+
+            dictionary[country][city] += population;
         }
     }
 }
