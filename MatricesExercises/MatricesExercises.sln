@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.MatrixOfPalindromes", "01.MatrixOfPalindromes\01.MatrixOfPalindromes.csproj", "{9ACDB055-B7CC-4261-8229-20AFC8A78EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.DiagonalDifference", "02.DiagonalDifference\02.DiagonalDifference.csproj", "{BECDA5BB-EDCD-4D32-B56B-21347E283AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.SquaresInMatrix", "03.SquaresInMatrix\03.SquaresInMatrix.csproj", "{565A645F-0259-4FE8-ABDE-28DECA70B305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.MaximalSum", "04.MaximalSum\04.MaximalSum.csproj", "{BD7AB723-DDA4-4819-A6A0-84299AD70932}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ACDB055-B7CC-4261-8229-20AFC8A78EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACDB055-B7CC-4261-8229-20AFC8A78EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACDB055-B7CC-4261-8229-20AFC8A78EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACDB055-B7CC-4261-8229-20AFC8A78EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECDA5BB-EDCD-4D32-B56B-21347E283AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECDA5BB-EDCD-4D32-B56B-21347E283AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECDA5BB-EDCD-4D32-B56B-21347E283AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECDA5BB-EDCD-4D32-B56B-21347E283AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565A645F-0259-4FE8-ABDE-28DECA70B305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565A645F-0259-4FE8-ABDE-28DECA70B305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565A645F-0259-4FE8-ABDE-28DECA70B305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565A645F-0259-4FE8-ABDE-28DECA70B305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7AB723-DDA4-4819-A6A0-84299AD70932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7AB723-DDA4-4819-A6A0-84299AD70932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7AB723-DDA4-4819-A6A0-84299AD70932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7AB723-DDA4-4819-A6A0-84299AD70932}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
