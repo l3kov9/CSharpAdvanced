@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "All";
+}
+
+<ul id="text"></ul>
+<span id="author" class="text-success"></span>
+<script>
+    jQuery(function () {
+        jQuery.getJSON("AllBooks", "", function(data) {
+            jQuery(data).each(function (index, element) {
+                var text = $("<h3 style='display: none'>\"" + element.Text + "\"</h3>");
+                $("#text").append(text);
+                text.show(500);
+
+                var author = $("<li style='display: none'>" + element.Author + "</li>");
+                $("#text").append(author);
+                author.show(1500);
+            });
+        }); 
+    })
+</script>

@@ -1,0 +1,19 @@
+https://www.w3schools.com/jquery/jquery_events.asp
+https://jqueryui.com/
+
+https://ionicons.com/
+https://fontawesome.com/icons?from=io
+https://www.w3schools.com/icons/icons_reference.asp
+
+https://getbootstrap.com/docs/3.3/examples/navbar/
+https://getbootstrap.com/docs/3.3/components/#btn-dropdowns
+
+https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+https://startbootstrap.com/template-categories/all/
+
+https://1stwebdesigner.com/best-wysiwyg-html-editor/ - WYSIWYG
+
+https://picsum.photos/ - random pics
+
+http://nvp-playground.azurewebsites.net/api/quotes/random/txt
