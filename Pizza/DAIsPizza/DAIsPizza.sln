@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAISPizza.Server", "DAISPizza.Server\DAISPizza.Server.csproj", "{687D9F8D-A77A-4F74-B74E-33A65D13A19C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAISPizza.Models", "DAISPizza.Models\DAISPizza.Models.csproj", "{B83D2DE6-3CEB-471F-88BA-B6FB747E2DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAISPizza.Services", "DAISPizza.Services\DAISPizza.Services.csproj", "{8EC26A3F-36D1-4987-99A0-6649BD136195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAISPizza.Utilities", "DAISPizza.Utilities\DAISPizza.Utilities.csproj", "{C7DC83BC-763D-4D82-B1ED-66C7A0199E07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{687D9F8D-A77A-4F74-B74E-33A65D13A19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687D9F8D-A77A-4F74-B74E-33A65D13A19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687D9F8D-A77A-4F74-B74E-33A65D13A19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687D9F8D-A77A-4F74-B74E-33A65D13A19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B83D2DE6-3CEB-471F-88BA-B6FB747E2DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83D2DE6-3CEB-471F-88BA-B6FB747E2DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83D2DE6-3CEB-471F-88BA-B6FB747E2DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83D2DE6-3CEB-471F-88BA-B6FB747E2DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC26A3F-36D1-4987-99A0-6649BD136195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC26A3F-36D1-4987-99A0-6649BD136195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC26A3F-36D1-4987-99A0-6649BD136195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC26A3F-36D1-4987-99A0-6649BD136195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DC83BC-763D-4D82-B1ED-66C7A0199E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DC83BC-763D-4D82-B1ED-66C7A0199E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DC83BC-763D-4D82-B1ED-66C7A0199E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DC83BC-763D-4D82-B1ED-66C7A0199E07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF6C3AD8-E217-4597-ACB4-E5D43ACF3DC8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dais-internship-2018.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DAISPizza.Server\\DAISPizza.Server.csproj
+		SccProjectName1 = DAISPizza.Server
+		SccLocalPath1 = DAISPizza.Server
+		SccProjectUniqueName2 = DAISPizza.Models\\DAISPizza.Models.csproj
+		SccProjectName2 = DAISPizza.Models
+		SccLocalPath2 = DAISPizza.Models
+		SccProjectUniqueName3 = DAISPizza.Services\\DAISPizza.Services.csproj
+		SccProjectName3 = DAISPizza.Services
+		SccLocalPath3 = DAISPizza.Services
+		SccProjectUniqueName4 = DAISPizza.Utilities\\DAISPizza.Utilities.csproj
+		SccProjectName4 = DAISPizza.Utilities
+		SccLocalPath4 = DAISPizza.Utilities
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿@model PizzaOrderViewModel
+@{
+    var doughTypes = Model.DoughTypes
+        .Select(doughType => new SelectListItem() { Text = doughType.Name, Value = doughType.Id.ToString() });
+    var sizes = Model.Sizes
+        .Select(size => new SelectListItem() { Text = size.Name, Value = size.Id.ToString() });
+}
+
+<div class="col-sm-6" style="padding-bottom: 20px">
+    <div class="card" style="height: 100%">
+        <img class="card-img-top" src="@Model.PictureUrl" alt="@(Model.Name + " image")">
+        <div class="card-body d-flex flex-column">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text">@Model.Description</p>
+            @using (Html.BeginForm("OrderPizza", "Orders", FormMethod.Post, new { id = "order-form" }))
+            {
+                <p class="card-text">
+
+                    @Html.AntiForgeryToken()
+                    @Html.Hidden("PizzaId", Model.Id)
+                    @Html.DropDownList("DoughTypeId", doughTypes, new { @class = "form-control" })
+                    @Html.DropDownList("SizeId", sizes, new { @class = "form-control" })
+                    @Html.Hidden("Ingredients")
+                </p>
+                <p class="card-text">
+                    @foreach (var ingredient in Model.AllIngredients)
+                    {
+                        <div class="form-check pizza-ingredient">
+                            @Html.CheckBox("ingredient-" + ingredient.Id, ingredient.IsSelected)
+                            <label class="form-check-label">
+                                @ingredient.Name
+                            </label>
+                        </div>
+                    }
+                </p>
+                <p class="card-text">
+                    <input type="submit" value="Order now" class="btn btn-lg btn-primary" />
+                </p>
+            }
+        </div>
+    </div>
+</div>

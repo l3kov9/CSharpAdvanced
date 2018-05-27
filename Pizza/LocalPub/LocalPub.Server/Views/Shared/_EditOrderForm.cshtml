@@ -1,0 +1,26 @@
+﻿@model OrderBindingModel
+<div class="form-group row">
+    @Html.LabelFor(model => model.OrderDate, "Order date", new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-10">
+        @Html.EditorFor(model => model.OrderDate, new { @class = "form-control datepicker" })
+        @Html.ValidationMessageFor(model => model.OrderDate, null, new { @class = "text-danger" })
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(model => model.AppetizerId, "Appetizer", new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-10">
+        @Html.DropDownListFor(model => model.AppetizerId, ViewBag.AppetizersList as SelectList, "-- none --", new { @class = "form-control" })
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(model => model.MainCourseId, "Main course", new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-10">
+        @Html.DropDownListFor(model => model.MainCourseId, ViewBag.MainCoursesList as SelectList, "-- none --", new { @class = "form-control" })
+    </div>
+</div>
+<div class="form-group row">
+    @Html.LabelFor(model => model.DessertId, "Dessert", new { @class = "col-sm-2 col-form-label" })
+    <div class="col-sm-10">
+        @Html.DropDownListFor(model => model.DessertId, ViewBag.DessertsList as SelectList, "-- none --", new { @class = "form-control" })
+    </div>
+</div>

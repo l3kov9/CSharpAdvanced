@@ -1,0 +1,19 @@
+﻿@using DAISPizza.Server.Helpers;
+@model LoginUserBindingModel
+<h2>Login</h2>
+@if (ViewBag.ValidationMessage != null)
+{
+    <div class="text-danger">@ViewBag.ValidationMessage</div>
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.FormGroupFor(model => model.Username)
+    @Html.FormGroupForPassword(model => model.Password)
+    <div class="form-group row">
+        <div class="col-sm-10 offset-2">
+            <input type="submit" value="Login" class="btn btn-primary" />
+            @Html.ActionLink("Register instead", "Register", "Users", null, new { @class = "btn btn-outline-success" })
+        </div>
+    </div>
+}

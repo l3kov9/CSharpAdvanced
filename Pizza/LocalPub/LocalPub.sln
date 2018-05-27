@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPub.Models", "LocalPub.Models\LocalPub.Models.csproj", "{419E71FA-E23D-4CE2-8BC3-73F2240DF4FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPub.Domain", "LocalPub.Domain\LocalPub.Domain.csproj", "{20D68A4E-9832-40B9-A6FB-10AC24DEB3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPub.Server", "LocalPub.Server\LocalPub.Server.csproj", "{6D5BABB2-7557-4EDC-A018-6BE2919FFE32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPub.Utilities", "LocalPub.Utilities\LocalPub.Utilities.csproj", "{F5B28EC0-47D5-4C46-A298-06A649961E97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{419E71FA-E23D-4CE2-8BC3-73F2240DF4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419E71FA-E23D-4CE2-8BC3-73F2240DF4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419E71FA-E23D-4CE2-8BC3-73F2240DF4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419E71FA-E23D-4CE2-8BC3-73F2240DF4FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D68A4E-9832-40B9-A6FB-10AC24DEB3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D68A4E-9832-40B9-A6FB-10AC24DEB3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D68A4E-9832-40B9-A6FB-10AC24DEB3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D68A4E-9832-40B9-A6FB-10AC24DEB3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5BABB2-7557-4EDC-A018-6BE2919FFE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5BABB2-7557-4EDC-A018-6BE2919FFE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5BABB2-7557-4EDC-A018-6BE2919FFE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5BABB2-7557-4EDC-A018-6BE2919FFE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B28EC0-47D5-4C46-A298-06A649961E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B28EC0-47D5-4C46-A298-06A649961E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B28EC0-47D5-4C46-A298-06A649961E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B28EC0-47D5-4C46-A298-06A649961E97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC078CF7-C3C2-4F01-BA30-5FB3E88C5C37}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dais-internship-2018.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LocalPub.Models\\LocalPub.Models.csproj
+		SccProjectName1 = LocalPub.Models
+		SccLocalPath1 = LocalPub.Models
+		SccProjectUniqueName2 = LocalPub.Domain\\LocalPub.Domain.csproj
+		SccProjectName2 = LocalPub.Domain
+		SccLocalPath2 = LocalPub.Domain
+		SccProjectUniqueName3 = LocalPub.Server\\LocalPub.Server.csproj
+		SccProjectName3 = LocalPub.Server
+		SccLocalPath3 = LocalPub.Server
+		SccProjectUniqueName4 = LocalPub.Utilities\\LocalPub.Utilities.csproj
+		SccProjectName4 = LocalPub.Utilities
+		SccLocalPath4 = LocalPub.Utilities
+	EndGlobalSection
+EndGlobal

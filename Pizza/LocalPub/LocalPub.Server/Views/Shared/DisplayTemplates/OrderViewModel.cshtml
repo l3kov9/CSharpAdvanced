@@ -1,0 +1,19 @@
+﻿@model OrderViewModel
+<tr>
+    <td>@Model.OrderDate.ToString("dd.MM.yyyy")</td>
+    <td>@Html.Raw(string.Join("<br />", Model.Meals))</td>
+    <td>
+        @if (!Model.IsCancelled)
+        {
+            using(Html.BeginForm("Cancel", "Orders", new { id = Model.Id }, FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <input type="submit" value="&times;" class="btn btn-danger" />
+            }
+        }
+        else
+        {
+            <span>Cancelled</span>
+        }
+    </td>
+</tr>

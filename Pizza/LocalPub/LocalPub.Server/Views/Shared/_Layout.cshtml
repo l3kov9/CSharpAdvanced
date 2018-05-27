@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Pub</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        @Html.ActionLink("Local Pub", "Index", "Home", null, htmlAttributes: new { @class = "navbar-brand" })
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            @if (this.User.Identity.IsAuthenticated)
+            {
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">@Html.ActionLink("My orders", "Index", "Orders", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("New order", "MakeOrder", "Orders", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Most wanted meals", "MostWanted", "Menu", null, new { @class = "nav-link" })</li>
+                    @if (this.User.IsInRole("Връзкар"))
+                    {
+                        <li class="nav-item">@Html.ActionLink("Meals by date", "MealsByDate", "Menu", null, new { @class = "nav-link" })</li>
+                    }
+                </ul>
+            }
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item navbar-text">
+                    @if (this.User.Identity.IsAuthenticated)
+                    {
+                        <span>@(string.Format("Hello, {0}!", this.User.Identity.Name))</span>
+                    }
+                </li>
+                <li class="nav-item">
+                    @if (this.User.Identity.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Log out", "Logout", "Clients", null, new { @class = "nav-link" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Log in", "Login", "Clients", null, new { @class = "nav-link" })
+                    }
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Local Pub</p>
+        </footer>
+    </section>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
